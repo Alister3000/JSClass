@@ -2,7 +2,7 @@
 Extends the functionality of the string class by providng you with methods that you can use to manipulate strings to achieve maximum perfomance. Mosts of this methods have been implemented using regular epxressions.
 
 ## Code Example
-To use _**`String-class`**_ in your page include it at the end of your html page
+To use _**`Array-class`**_ in your page include it at the end of your html page
 ``` Html
         <!Doctype html>
         <html>
@@ -14,77 +14,34 @@ To use _**`String-class`**_ in your page include it at the end of your html page
         </html>
 ```
 
-1. ######  Method _`hasVowels()`._
+1. ######  Method _`FindNumber()`._
 
-    This method can be used to check if a string has vowels, It will return a boolean datatype true if vowels exists and false if they dont.
-    ``` JavaScript
-        var feeling = "This is the best day ever",
-            random = "sphynx";
-            
-            feeling.hasVowels(); // return => true
-            random.hasVowels(); // return => false
-    ```
-2. ######  Method _`toUpper()`_.
+    This method can be use to get a number in an array
+2.  ######  Method _`getLastItem()`._
 
-    This method can be used to uppercase words, its a custom implementation of JavaScript inbuilt `toUpperCase()`, This method will return an all uppercase string.
-    ``` JavaScript
-        var myVar = "We all love javasript";
-            myVar.toUpper(); // return => WE ALL LOVE JAVASCRIPT
-    ```
-3. ######  Method _`toLower()`_.
+    This method can be used to get the last item in an array
+3.  ######  Method _`shiftLast()`._
 
-    This method can be used to lowercase words, its a custom implementation of JavaScript inbuilt `toLowerCase()`, This method will return  an all uppercase string.
-    ``` JavaScript
-        var myVar = "WE ALL LOVE JAVASCRIPT";
-            myVar.toLower(); // return => we all love javascript
-    ```
-4. ######  Method _`ucFirst()`_.
+    This method can be used to shift the last item to the first item
 
-    This method can be used to to capitize a sentence, It returns a string with all the words capitalized.
-    ``` JavaScript
-        var sentence = "i want this sentence capiatalized";
-            sentence.ucFirst(); // returns I Want This Sentence Capitalized
-    ```
-5. ######  Method _`isQuestion()`_.
+3.  ######  Method _`getItemLength()`._
 
-    This method can be used to detect if a sentence is a question or not. It will return a boolean value of true or false.
-    ``` JavaScript
-        var myVar = "Are you serious?", mySecondVar = "yes i am";
-            myVar.isQuestion(); // returns => true
-            mySecondVar.isQuestion(); // returns => false
-    ```
-6. ######  Method _`words()`_.
+    This method can should get the length of all the items in an array
 
-    This method can be used to return the all the words in sentence in form of an array e.g `['me', 'and', 'myself']`
-    ``` JavaScript
-        var sentence = "me and myself";
-            sentence.words(); // returns => ['me', 'and', 'myself']
-    ```
+4.  ######  Method _`max()`._
 
-7. ######  Method _`WordCount()`_.
+    This method can be use to get the maximum item in an array
 
-    This method can be used to find the number of words words in a sentence, It utilizes the method `words` above to maximize perfomance.
-    ``` JavaScript
-        var sentence = "me and myself";
-            sentence.wordCount(); // returns = 3
-    ```
+5.  ######  Method _`min()`._
 
-8. ######  Method _`toCurrency()`_.
+     This method can be use to get the minimum item in an array
+5.  ######  Method _`sum()`._
 
-    This method can be used to format a string to currency.
-    ``` Javascript
-        var money = "234456789.12"
-            money.toCurrency(); // returns 234,456,789.12
-    ```
+     This method can be use to get the sum of all the element of an array
 
-9. ######  Method _`fromCurrency()`_.
+5.  ######  Method _`groupBy()`._
 
-    This method can be used to converts a currency format, back to nummber. It return type is a number.
-    ``` JavaScript
-        var currency = "12,345,678.12";
-            currency.fromCurrency(); // returns  => 12345678.12
-    ```
-
+     This method can be use to group an array by there types
 ## Installation
 1.  Download and install [**Node JS**](https://nodejs.org/en/) if not already installed.  
 1.  Run `npm install -g http-server` on the terminal.
